@@ -15,16 +15,6 @@
             <button type="submit">Analyze Sentiment</button>
         </form>
         <h2>Prediction: {{ prediction }}</h2>
-        <div class="wordclouds">
-            <div>
-                <h3>Negative Reviews Word Cloud</h3>
-                <img src="{{ url_for('static', filename='wordcloud_neg.png') }}" alt="Negative Word Cloud">
-            </div>
-            <div>
-                <h3>Positive Reviews Word Cloud</h3>
-                <img src="{{ url_for('static', filename='wordcloud_pos.png') }}" alt="Positive Word Cloud">
-            </div>
-        </div>
     </div>
 </body>
 </html>
