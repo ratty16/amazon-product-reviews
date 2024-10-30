@@ -4,4 +4,4 @@ pandas==1.5.3                # Data manipulation library
 scikit-learn==1.2.0          # Machine learning library
 nltk==3.7                    # Natural Language Toolkit for NLP tasks
 matplotlib==3.6.2            # Plotting library
-wordcloud==1.8.2             # Word cloud visualization
+wordcloud==1.8.0             # Word cloud visualization
