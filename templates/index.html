@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Review Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Amazon Review Sentiment Analysis</h1>
+        <p>Model Accuracy: {{ accuracy * 100 | round(2) }}%</p>
+        <form method="POST">
+            <textarea name="review" placeholder="Enter your review here..."></textarea>
+            <button type="submit">Analyze Sentiment</button>
+        </form>
+        <h2>Prediction: {{ prediction }}</h2>
+        <div class="wordclouds">
+            <div>
+                <h3>Negative Reviews Word Cloud</h3>
+                <img src="{{ url_for('static', filename='wordcloud_neg.png') }}" alt="Negative Word Cloud">
+            </div>
+            <div>
+                <h3>Positive Reviews Word Cloud</h3>
+                <img src="{{ url_for('static', filename='wordcloud_pos.png') }}" alt="Positive Word Cloud">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
